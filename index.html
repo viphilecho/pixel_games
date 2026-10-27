@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Gift Quest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <div class="heading"><span>QUEST_01</span><span>FIND THE GIFT →</span></div>
+    <div class="frame">
+      <canvas id="screen" width="360" height="160" aria-label="Pixel art game"></canvas>
+    </div>
+    <div class="message" id="message">TEMUKAN GIFT DI SEBELAH KANAN.</div>
+    <div class="controls">
+      <button id="left" aria-label="Gerak kiri">◀ KIRI</button>
+      <button id="right" aria-label="Gerak kanan">KANAN ▶</button>
+      <button id="reset">↻ ULANG</button>
+    </div>
+    <p class="help">GERAK: ← → / A D · HP: tahan tombol kiri atau kanan<br>
+      Dekati gift untuk membuka kejutan.</p>
+    <section class="gift-card hidden" id="giftCard">
+      <div class="big">✦ Happy Birthday ✦</div>
+      <p id="giftText">KAMU MENEMUKAN HADIAH RAHASIA!</p>
+      <p>hadiah kecil, khusus buat kamu ♡</p>
+      <button id="closeGift">TUTUP</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
